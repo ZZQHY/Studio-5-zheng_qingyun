@@ -11,9 +11,9 @@ Next, I will document all these work of the past two days using a ‘tutorial st
 
 ## Documentation
 ### Table of Contents:
-* List of components used and their functions
-* Building an Arduino on a Breadboard step by step
-* First code for the board and introduction to Arduino programming
+1. List of components used and their functions
+2. Building an Arduino on a Breadboard step by step
+3. First code for the board and introduction to Arduino programming
 
 ### Component List and Their Functions
 * A breadboard
@@ -27,6 +27,7 @@ Next, I will document all these work of the past two days using a ‘tutorial st
 * some jumpers
 
 ### Building an Arduino on a Breadboard
+
 **STEP 1: Adding Power Circuit**
 
 ***1. Regulating the Voltage to 5V***
@@ -37,33 +38,103 @@ For the power circuit, the voltage fluctuations are significant, so it is import
 
 ![Explanation of the voltage regulator pinout](./images/example.jpg)
 
+Connect Capacitor 1 to VOUT & GND
 
-Describe the work you did to complete the assignment
+![Connect Capacitor 1 to VOUT & GND](./images/example.jpg)
 
-bullet point list
-* item one
-* item two
-* item three
+Connect capacitor 2 to VIN & GND
 
-numbered list
-1. item one
-2. item two
-3. item three
+![Connect capacitor 2 to VIN & GND](./images/example.jpg)
 
-**bold text**
+***2. Expand the power circuit to the left side of the breadboard using jumpers***
 
-*italic text*
+![Expand the power circuit to the left side of the breadboard using jumpers](./images/example.jpg)
 
-***italic and bold text***
+***3. Add an LED to the power circuit***
 
-example of an external link
+In the power circuit, connect an LED as an indicator light when the board is powered on, and quickly check if the circuit board is short-circuited.
 
-[description of the website](https://www.https://www.example.com/)
+The power circuit has a high current, so it is necessary to connect a 220-ohm resistor.
 
-example of a picture hosted on an external website
+![Connect LED to the circuit](./images/example.jpg)
 
-![picture description](https://djmag.com/sites/default/files/storyimages/Clara_Rockmore.jpg)
 
-example of a picture hosted inside your repository (don't forget the ./ operand)
+**STEP 2: Connecting the ATmega328**
 
-![picture description](./images/example.jpg)
+![DIP Pinout](./images/example.jpg)
+
+***1. Connecting Atmega328 Microcontroller to Power Circuit***
+
+To facilitate uniformity, install the ATmega on the right side at position 11. 
+
+Connect VCC and GND to the positive and negative terminals of the power circuit respectively. 
+
+Connect AREF (analog reference) to the positive terminal. Connect AVCC (VCC) to the positive terminal.
+
+![Atmega Wiring](./images/example.jpg)
+
+***2. Adding an external clock to ATmega***
+
+Add an external clock of 16MHz between pins 9 and 10 of the ATmega, connect two 22pF capacitors to the negative terminal.
+
+Use 16MHz crystal oscillator & 22pF capacitors * 2
+
+![Use 16MHz crystal oscillator & 22pF capacitors](./images/example.jpg)
+![Crystal Oscillator Wiring](./images/example.jpg)
+
+***3. Onboard Pin 13***
+
+The Arduino Uno board is equipped with an LED connected to pin 13. It will be used when running the Blink example program later.
+
+![Pin13 LED](./images/example.jpg)
+
+
+**STEP 3: Connect the USB-serial Connector**
+
+***1. Module Pin Connection Method***
+
+* DTR — Reset
+* RXI — TX
+* TXO — RX
+* VCC — VCC
+* CTS — Do not use
+* GND — GND
+
+![USB-serial Connector_1](./images/example.jpg)
+![USB-serial Connector_2](./images/example.jpg)
+
+The computer data transmitted through the USB-serial connector is too fast for ATmega, so it is necessary to connect a capacitor between DTR and Reset to slow down the speed. The capacitor should be of size 0.1uF (micro microfarads).
+
+![capacitor between DTR and Reset](./images/example.jpg)
+
+Arduino Uno board completed!
+
+![Arduino Uno board completed!](./images/example.jpg)
+
+
+### First Code for Development Board and Introduction to Arduino Programming
+
+Connect the USB interface to the computer.
+
+Check if the green light is on.
+
+Smell the circuit board for any burnt smell.
+
+Touch it with your hand to see if it's overheating.
+
+Eliminate short circuits and other wiring errors to ensure the circuit is running properly.
+
+1. Select the development board - Arduino Uno.
+2. Choose the interface number for connecting to the computer.
+3. Load the example program (File-Examples-Basics-Blink).
+4. Click on compile and upload, and the LED on pin 13 will blink.
+
+![Coding_1](./images/example.jpg)
+
+![Coding_2](./images/example.jpg)
+
+![Coding_3](./images/example.jpg)
+
+![Lignt Blink](./images/example.jpg)
+
+
