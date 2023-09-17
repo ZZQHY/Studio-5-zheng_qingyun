@@ -36,7 +36,7 @@ To ensure the stable operation of the Atmega328 microchip, it is necessary to fi
 
 For the power circuit, the voltage fluctuations are significant, so it is important to place large capacitors (10uF) at the input and output of the voltage regulator to ensure the stability of the entire power circuit.
 
-![Explanation of the voltage regulator pinout](./images/voltage_regulator.jpg)
+![Explanation of the voltage regulator pinout](./images/Explanation_of_the_voltage_regulator_pinout.jpg)
 
 Connect Capacitor 1 to VOUT & GND
 
