@@ -36,19 +36,19 @@ To ensure the stable operation of the Atmega328 microchip, it is necessary to fi
 
 For the power circuit, the voltage fluctuations are significant, so it is important to place large capacitors (10uF) at the input and output of the voltage regulator to ensure the stability of the entire power circuit.
 
-![Explanation of the voltage regulator pinout](./images/voltage_regulator.jpg)
+![Explanation of the voltage regulator pinout](./images/voltage_regulator.jpeg)
 
 Connect Capacitor 1 to VOUT & GND
 
-![Connect Capacitor 1 to VOUT & GND](./images/capacitor_1_to_VOUT_GND.jpg)
+![Connect Capacitor 1 to VOUT & GND](./images/capacitor_1_to_VOUT_GND.jpeg)
 
 Connect capacitor 2 to VIN & GND
 
-![Connect capacitor 2 to VIN & GND](./images/capacitor_2_to_VIN_GND.jpg)
+![Connect capacitor 2 to VIN & GND](./images/capacitor_2_to_VIN_GND.jpeg)
 
 ***2. Expand the power circuit to the left side of the breadboard using jumpers***
 
-![Expand the power circuit to the left side of the breadboard using jumpers](./images/jumpers.jpg)
+![Expand the power circuit to the left side of the breadboard using jumpers](./images/jumpers.jpeg)
 
 ***3. Add an LED to the power circuit***
 
@@ -56,12 +56,12 @@ In the power circuit, connect an LED as an indicator light when the board is pow
 
 The power circuit has a high current, so it is necessary to connect a 220-ohm resistor.
 
-![Connect LED to the circuit](./images/Connect_LED_to_the_circuit.jpg)
+![Connect LED to the circuit](./images/Connect_LED_to_the_circuit.jpeg)
 
 
 **STEP 2: Connecting the ATmega328**
 
-![DIP Pinout](./images/DIP_Pinout.jpg)
+![DIP Pinout](./images/DIP_Pinout.jpeg)
 
 ***1. Connecting Atmega328 Microcontroller to Power Circuit***
 
@@ -71,7 +71,7 @@ Connect VCC and GND to the positive and negative terminals of the power circuit 
 
 Connect AREF (analog reference) to the positive terminal. Connect AVCC (VCC) to the positive terminal.
 
-![Atmega Wiring](./images/Atmega_Wiring.jpg)
+![Atmega Wiring](./images/Atmega_Wiring.jpeg)
 
 ***2. Adding an external clock to ATmega***
 
@@ -79,14 +79,14 @@ Add an external clock of 16MHz between pins 9 and 10 of the ATmega, connect two 
 
 Use 16MHz crystal oscillator & 22pF capacitors * 2
 
-![Use 16MHz crystal oscillator & 22pF capacitors](./images/crystal_oscillator_and_capacitor.jpg)
-![Crystal Oscillator Wiring](./images/Crystal_Oscillator_Wiring.jpg)
+![Use 16MHz crystal oscillator & 22pF capacitors](./images/crystal_oscillator_and_capacitor.jpeg)
+![Crystal Oscillator Wiring](./images/Crystal_Oscillator_Wiring.jpeg)
 
 ***3. Onboard Pin 13***
 
 The Arduino Uno board is equipped with an LED connected to pin 13. It will be used when running the Blink example program later.
 
-![Pin13 LED](./images/Pin13_LED.jpg)
+![Pin13 LED](./images/Pin13_LED.jpeg)
 
 
 **STEP 3: Connect the USB-serial Connector**
@@ -100,17 +100,17 @@ The Arduino Uno board is equipped with an LED connected to pin 13. It will be us
 * CTS — Do not use
 * GND — GND
 
-![USB-serial Connector_1](./images/USB_serial_Connector_1.jpg)
+![USB-serial Connector_1](./images/USB_serial_Connector_1.jpeg)
 
-![USB-serial Connector_2](./images/USB_serial_Connector_2.jpg)
+![USB-serial Connector_2](./images/USB_serial_Connector_2.jpeg)
 
 The computer data transmitted through the USB-serial connector is too fast for ATmega, so it is necessary to connect a capacitor between DTR and Reset to slow down the speed. The capacitor should be of size 0.1uF (micro microfarads).
 
-![capacitor between DTR and Reset](./images/capacitor_between_DTR_and_Reset.jpg)
+![capacitor between DTR and Reset](./images/capacitor_between_DTR_and_Reset.jpeg)
 
 Arduino Uno board completed!
 
-![Arduino Uno board completed!](./images/Arduino_Uno_board_completed!.jpg)
+![Arduino Uno board completed!](./images/Arduino_Uno_board_completed!.jpeg)
 
 
 ### First Code for Development Board and Introduction to Arduino Programming
@@ -130,12 +130,12 @@ Eliminate short circuits and other wiring errors to ensure the circuit is runnin
 3. Load the example program (File-Examples-Basics-Blink).
 4. Click on compile and upload, and the LED on pin 13 will blink.
 
-![Coding_1](./images/Coding_1.jpg)
+![Coding_1](./images/Coding_1.png)
 
-![Coding_2](./images/Coding_2.jpg)
+![Coding_2](./images/Coding_2.png)
 
-![Coding_3](./images/Coding_3.jpg)
+![Coding_3](./images/Coding_3.png)
 
-![Lignt Blink](./images/Lignt_Blink.jpg)
+![Lignt Blink](./images/Lignt_Blink.jpeg)
 
 
