@@ -4,7 +4,7 @@
 Explain the structure, principles, manufacturing process, and functions of electronic components (crystal oscillators) through hand-sketching, referencing the style of naturalistic illustrations.
 
 ## Documentation
-![Sketch](./images/Sketch.jpg)
+![Sketch](./images/sketch.jpg)
 
 ### **Some Explanation**
 First, we need to understand what is the crystal oscillators.
