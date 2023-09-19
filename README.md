@@ -1,7 +1,9 @@
 # Student's documentation template
 
 ## About
-This is the main README file of your repository, rewrite it with a description of who you are, what are your interests and why you chose this Studio class.
+My name is Zheng Qingyun, and I come from the industrial design major. I developed a strong interest in Arduino and related open-source hardware development since my freshman year's open-source programming course and actively applied it in subsequent design practices.
+
+In this course, I hope to learn the basic knowledge of PCB board design and development, and gain a deeper understanding of the relationship between design and technology. In addition, I have a strong interest in the topic of nature and hope to learn design from a non-human-centered perspective in this studio.
 
 ## _
 
