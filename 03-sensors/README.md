@@ -10,15 +10,15 @@ The main content of this lesson is the study and practice of analog signals and 
 
 1. First, we tested the basic digital signal using a switch. When the switch is closed, Pin 2 receives a 5V signal. When the switch is open, it receives a GND (0V) signal. The purpose of connecting the resistor is to prevent a short circuit.
 
-![button2](./images/button2.jpg)
+![button2](./images/button2.jpeg)
 
 When the switch is pressed, the light will turn on.
 
 2. Performed a simple practice on analog signals and adjusted using a potentiometer.
 
-![potentiometer](./images/potentiometer.jpg)
+![potentiometer](./images/potentiometer.jpeg)
 
-![potentiometer2](./images/potentiometer2.jpg)
+![potentiometer2](./images/potentiometer2.jpeg)
 
 
 ## Pressure Sensor
@@ -145,12 +145,12 @@ void loop() {
 }
 ```
 
-![U-shaped2](./images/U-shaped2.jpg)
+![U-shaped2](./images/U-shaped2.jpeg)
 
-![U-shaped3](./images/U-shaped3.jpg)
+![U-shaped3](./images/U-shaped3.jpeg)
 
-![U-shaped4](./images/U-shaped4.jpg)
+![U-shaped4](./images/U-shaped4.jpeg)
 
-![U-shaped5](./images/U-shaped5.jpg)
+![U-shaped5](./images/U-shaped5.jpeg)
 
 
