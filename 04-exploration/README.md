@@ -1,35 +1,16 @@
-# Assignment's Title
+# Exploration
 
 ## Assignment's description
-Describe the assignment
+Go to the campus to do field research, observe the urban nature, and think about the system in the urban nature
 
-## Documentation
-Describe the work you did to complete the assignment
+![1](./images/1.jpg)
 
-bullet point list
-* item one
-* item two
-* item three
+![2](./images/2.jpg)
 
-numbered list
-1. item one
-2. item two
-3. item three
+![3](./images/3.jpg)
 
-**bold text**
+![4](./images/4.jpg)
 
-*italic text*
+![5](./images/5.jpg)
 
-***italic and bold text***
-
-example of an external link
-
-[description of the website](https://www.https://www.example.com/)
-
-example of a picture hosted on an external website
-
-![picture description](https://djmag.com/sites/default/files/storyimages/Clara_Rockmore.jpg)
-
-example of a picture hosted inside your repository (don't forget the ./ operand)
-
-![picture description](./images/example.jpg)
+![6](./images/6.jpg)
