@@ -5,7 +5,7 @@ The goal of this task is to create a PCB version of the Arduino board previously
 The PCB design will be done using the "EasyEDA PRO" software, and it will be manufactured using the equipment at Fablab.
 
 ## PCB board engineering file viewing link:
-[engineering file]([https://www.https://www.example.com/](https://u.easyeda.com/join?type=project&key=bdde3c9b475a499182a6a5fae1e3300d&inviter=d313de78c2a041daaf8b2a6d9e7369b5))
+[engineering file](https://u.easyeda.com/join?type=project&key=bdde3c9b475a499182a6a5fae1e3300d&inviter=d313de78c2a041daaf8b2a6d9e7369b5)
 
 ## Documentation
 This software that is being used is an online tool, with the URL: 
@@ -18,6 +18,7 @@ First, we need to search for components in the component library and place them 
 ![1](./images/1.jpg)
 
 Place ATmega328 by selecting "Components" in the toolbar, shortcut: Shift+F.
+
 To manipulate the interface, use the spacebar to rotate the components and the middle mouse button to move the interface.
 
 ![2](./images/2.jpg)
@@ -30,7 +31,9 @@ First, connect the power 5V and ground GND. They are not physical components, bu
 
 Next, the GND, AREF, and AVCC on the right side need to be connected to power and ground.
 
-AREF interface is used for connecting the reference voltage. If we need to connect a 24V sensor, but Arduino's voltage is only 5V, the range of analog and digital signals it can transmit is only 0-5V. In order for the 24V sensor to work properly, we need to provide a 24V reference to AREF.
+AREF interface is used for connecting the reference voltage. If we need to connect a 24V sensor, but Arduino's voltage is only 5V, the range of analog and digital signals it can transmit is only 0-5V. 
+
+In order for the 24V sensor to work properly, we need to provide a 24V reference to AREF.
 
 However, in this case, we don't need to do that because most of the sensors we use are 5V. Therefore, we can merge it with AVCC and connect them to +5V.
 
@@ -41,11 +44,14 @@ Here, to keep the wiring organized, we can directly name the connections.
 ![4](./images/4.jpg)
 
 Through hole component —— DIP
+
 Surface mount component —— SMD
 
 Through-hole component means that even though there are no physical connections, they still need to be connected during the later routing process.
 
-Next, we will select other components. Due to the large number of components, we need to filter them using appropriate methods. The left side is the component category, and the upper right section shows different specifications of components within the same category.
+Next, we will select other components. Due to the large number of components, we need to filter them using appropriate methods. 
+
+The left side is the component category, and the upper right section shows different specifications of components within the same category.
 
 Different packaging methods represent different installation methods. To differentiate between the two, we will use SMD (Surface Mount Device) for this project instead of DIP (Dual In-line Package).
 
@@ -63,7 +69,9 @@ Please place the crystal oscillator as close as possible to the ATmega, and conn
 
 ![8](./images/8.jpg)
 
-Next, connect the onboard LED for the power indicator and pin 13. The power indicator LED should be directly connected to the power circuit and should be in series with a 499Ω resistor. The other LED should have its positive terminal connected to pin 13, which is pin 19 of the ATmega. Please note that the package size for the components is 1206. 1206 means that the size is 1.206 inches = 3.06mm.
+Next, connect the onboard LED for the power indicator and pin 13. The power indicator LED should be directly connected to the power circuit and should be in series with a 499Ω resistor. 
+
+The other LED should have its positive terminal connected to pin 13, which is pin 19 of the ATmega. Please note that the package size for the components is 1206. 1206 means that the size is 1.206 inches = 3.06mm.
 
 ![9](./images/9.jpg)
 
@@ -160,6 +168,7 @@ Before the wiring, we need to do some design to make the PCB board more user-fri
 During the process of routing, there may be problems with the crossing of lines. Since we are using single-layer boards, we can only solve this issue through the design of the routing. When faced with situations that cannot be resolved, we can consider the following methods:
 
 Method 1: Adding jumpers to connect the lines.
+
 Method 2: Adding a 0Ω resistor to act as a wire.
 
 ![35](./images/35.jpg)
@@ -168,9 +177,9 @@ When designing PCB boards, it is important to note that not all interfaces of AT
 
 ![36](./images/36.jpg)
 
-RX and TX are needed for data transmission.
-SCL and SDA are necessary because some sensors require them.
-PWM pins: fake ana ana write can be used as analog outputs.
+*RX and TX are needed for data transmission.
+*SCL and SDA are necessary because some sensors require them.
+*PWM pins: fake ana ana write can be used as analog outputs.
 
 The outer frame of the PCB board can be drawn in Rhino and imported. Once all the work is completed, we will obtain a file like this.
 
