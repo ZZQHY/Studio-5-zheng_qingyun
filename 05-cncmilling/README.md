@@ -1,7 +1,8 @@
 # PCB CNC
 
 ## Assignment's description
-The goal of this task is to create a PCB version of the Arduino board previously built on a breadboard. The PCB design will be done using the "EasyEDA PRO" software, and it will be manufactured using the equipment at Fablab.
+The goal of this task is to create a PCB version of the Arduino board previously built on a breadboard. 
+The PCB design will be done using the "EasyEDA PRO" software, and it will be manufactured using the equipment at Fablab.
 
 ## PCB board engineering file viewing link:
 [engineering file]([https://www.https://www.example.com/](https://u.easyeda.com/join?type=project&key=bdde3c9b475a499182a6a5fae1e3300d&inviter=d313de78c2a041daaf8b2a6d9e7369b5))
