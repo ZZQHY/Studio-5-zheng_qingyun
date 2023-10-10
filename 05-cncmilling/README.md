@@ -184,3 +184,149 @@ When designing PCB boards, it is important to note that not all interfaces of AT
 The outer frame of the PCB board can be drawn in Rhino and imported. Once all the work is completed, we will obtain a file like this.
 
 ![37](./images/37.jpg)
+
+
+Next, you need to export the file for cutting.
+
+Select the top layer, board layer, and hole layer in the selection layer. You can choose PDF or PNG as the export format.
+
+![38](./images/38.png)
+
+The exported image is in black and white. White represents the retained copper layer, while black represents the areas that will be cut and removed.
+
+![39](./images/39.png)
+
+Next step: Use this online tool to generate the processing file, tool link: [modsproject.org](http://modsproject.org/)
+
+This is a node-based software, similar to Grasshopper.
+
+![40](./images/40.png)
+
+![41](./images/41.png)
+
+Software operation is as follows:
+
+### First step: Export internal paths
+
+1. Start with a blank interface. Right-click on the interface and then click on "programs".
+
+![42](./images/42.png)
+
+![43](./images/43.png)
+
+2. Select "open program" and then choose "PCB".
+
+![44](./images/44.png)
+
+![45](./images/45.png)
+
+3. Next, import the black and white PNG image (or SVG).
+   
+Here, it is important to pay attention to the size of the imported image, such as 58*67mm, and compare it with the size in the software before exporting.
+
+Before importing the image, it needs to be processed in AI (or other graphic software) to remove the border, with a resolution of 1000ppi.
+
+![46](./images/46.png)
+
+![47](./images/47.png)
+
+![48](./images/48.png)
+
+![49](./images/49.png)
+
+4. Next, we need to set the size of the tool head. For cutting the inner traces, use 1/64 inch, and for cutting the outer frame and holes, use 1/32 inch.
+
+Additionally, the cutting depth here is set to 0.15mm in order to remove the surface copper coating.
+
+![50](./images/50.png)
+
+![51](./images/51.png)
+
+Meaning of several data
+
+![52](./images/52.png)
+
+5. The default value of 10 for "origin" is intended to protect the machine, but it is not necessary here, so all the values will be set to 0.
+
+![53](./images/53.png)
+
+6. When exporting, select the switch below.
+
+![54](./images/54.png)
+
+![55](./images/55.png)
+
+### Second Step: Exporting Hole Layer
+
+1. Process in AI by removing the black background to obtain the hole layer. Use the same method to select and export.
+
+![56](./images/56.png)
+
+![57](./images/57.png)
+
+![58](./images/58.png)
+
+Please note that the imported image dimensions have changed and need to be reprocessed.
+
+![59](./images/59.png)
+
+To ensure the correct size, please make sure to check "Use Artboards" when exporting and importing.
+
+![60](./images/60.png)
+
+![61](./images/61.png)
+
+2. The tool size for the cavity needs to be selected as 1/32. Clicking this button will cause the subsequent data to change accordingly.
+
+![62](./images/62.png)
+
+![63](./images/63.png)
+
+3. Similarly, modify the data here to 0.
+Repeat the previous method, then click export, and the image viewed should be correct as shown in the figure.
+
+![64](./images/64.png)
+
+![65](./images/65.png)
+
+![66](./images/66.png)
+
+### Third Step: Exporting the box layer
+
+1. In AI, draw a black layer and a white layer. Subtract the layers above by 2, and you will obtain the box layer.
+
+![67](./images/67.png)
+
+![68](./images/68.png)
+
+2. Click on this boolean mode to check if the outer frame and the interior are too close.
+
+![69](./images/69.png)
+
+![70](./images/70.png)
+
+You can also directly set it in the software before exporting.
+
+![71](./images/71.png)
+
+3. After obtaining the correct cut diagram, select "Export" and repeat all the previous steps to obtain the wiring file for the outer frame.
+
+![72](./images/72.png)
+
+![73](./images/73.png)
+
+![74](./images/74.png)
+
+![75](./images/75.png)
+
+![76](./images/76.png)
+
+Finally, obtain these three files and remember to import them into the device for manufacturing.
+
+![77](./images/77.png)
+
+If you need to cut out characters on the board, you need to use a small circle for inspection.
+
+![78](./images/78.png)
+
+![79](./images/79.png)
