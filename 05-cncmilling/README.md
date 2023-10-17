@@ -330,3 +330,33 @@ If you need to cut out characters on the board, you need to use a small circle f
 ![78](./images/78.png)
 
 ![79](./images/79.png)
+
+## The manufacturing process with the Roland milling machine
+
+Preparation Steps: Place the board with a copper layer on the cutting table, ensuring it is absolutely flat. Switch to topology and use specialized tools to remove the original head and replace it with a 1/64 head. Before replacement, use a magnifying glass to inspect the head for any damages.
+
+Step 1: Create a folder on your computer with your own name and place your three files in it:
+
+* The frame
+* The hole layer
+* Traces
+
+Step 2: Plan the approximate cutting positions on the board and set the X and Y coordinates. Then, manually loosen the drill bit and press it down against the copper layer near the middle. Tighten the screw and set the Z. Once done, move the Z upwards.
+
+Step 3: Click on CUT, upload the files. Start by uploading Traces and adjust the speed slowly for observation. Keep the mouse cursor on PAUSE to quickly react in case any problems arise.
+
+Step 4: Verify that everything is correct and wait for the cutting to complete.
+
+Step 5: Change the cutter head to 1/32 size and repeat the above steps to cut the hole layer and the frame.
+
+![80](./images/80.png)
+
+![81](./images/81.png)
+
+Subsequent steps: After cutting, use a vacuum cleaner to clean up the cutting waste. Use a tool to remove the cut board, peel off the double-sided adhesive on the back, and polish the side with a copper layer.
+
+Next, prepare for soldering. Use a soldering iron to solder various electronic components onto the board as needed.
+
+![82](./images/82.png)
+
+![83](./images/83.png)
