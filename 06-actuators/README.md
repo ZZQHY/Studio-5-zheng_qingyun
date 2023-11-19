@@ -11,9 +11,9 @@ Effect: Control motor angle by rotating potentiometer
 
 Connect the potentiometer to A0 and the motor to PIN9. Upload the code and the motor will rotate corresponding to the rotation of the potentiometer.
 
-![picture1 ](./images/1.jpg)
+![picture1 ](./images/1.jpeg)
 
-![picture2 ](./images/2.jpg)
+![picture2 ](./images/2.png)
 
 ### LCD Electronic Screen - Simplifying Wiring and Programming by Communicating Between Control Boards Using SLA and SDA
 
@@ -23,15 +23,15 @@ TX is like making a landline telephone call.
 
 Connection method: Connect A5 and A4, where A5 is SCL and A4 is SDA. Connect SCL to SCL and SDA to SDA. Then, connect GND and VCC.
 
-![picture3 ](./images/3.jpg)
+![picture3 ](./images/3.jfif)
 
 In this case, you need to use libraries that are not pre-installed in the Arduino IDE. You need to download them first. After downloading, locate the example files.
 
-![picture4 ](./images/4.jpg)
+![picture4 ](./images/4.png)
 
-![picture5 ](./images/5.jpg)
+![picture5 ](./images/5.png)
 
-![picture6 ](./images/6.jpg)
+![picture6 ](./images/6.png)
 
 In this example file:
 
@@ -49,17 +49,17 @@ lcd.print("Hello, world!");
 
 Use the code in this example file to read the address of the LCD and modify the above code.
 
-![picture7 ](./images/7.jpg)
+![picture7 ](./images/7.png)
 
-![picture8 ](./images/8.jpg)
+![picture8 ](./images/8.png)
 
 To view the displayed content, simply upload the file.
 
-![picture9 ](./images/9.jpg)
+![picture9 ](./images/9.jpeg)
 
-![picture10 ](./images/10.jpg)
+![picture10 ](./images/10.png)
 
-![picture11 ](./images/11.jpg)
+![picture11 ](./images/11.jpeg)
 
 ### Actuator 3: DC Motor
 
