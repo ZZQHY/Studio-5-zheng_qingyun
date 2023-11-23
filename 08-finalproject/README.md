@@ -1,35 +1,11 @@
-# Assignment's Title
+# TimePulse
 
-## Assignment's description
-Describe the assignment
+## Design Description
 
-## Documentation
-Describe the work you did to complete the assignment
+这是一个能够帮助人们以不同的视角感知时间的设备。通过模糊时间刻度，体验不同动物感知时间的方式及反应，建立人与自然昼夜更替的情感关联，思考其社会实用性以外的意义。
 
-bullet point list
-* item one
-* item two
-* item three
+设备上的按键可以切换两种模式，常规模式下五颗灯珠指示从日出到日落的时间，按下开关切换到多模态的时间感知，在特定的时间散发香味、发出震动，或是缓缓闪光
 
-numbered list
-1. item one
-2. item two
-3. item three
+This is a device that can help people perceive time from some different perspectives. Through the fuzzy time scale, we can experience the ways and reactions of different animals to perceive time, establish the emotional connection between human and nature day and night, and think about its significance beyond social practicability.
 
-**bold text**
-
-*italic text*
-
-***italic and bold text***
-
-example of an external link
-
-[description of the website](https://www.https://www.example.com/)
-
-example of a picture hosted on an external website
-
-![picture description](https://djmag.com/sites/default/files/storyimages/Clara_Rockmore.jpg)
-
-example of a picture hosted inside your repository (don't forget the ./ operand)
-
-![picture description](./images/example.jpg)
+The key switches between two modes, the regular mode with five light beads indicating the time from sunrise to sunset, and the press of a switch to switch to a multimodal time perception that emits a scent, vibrates, or slowly flashes at a specific time
